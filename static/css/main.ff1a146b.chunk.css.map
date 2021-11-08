@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/Add.module.css"],"names":[],"mappings":"AAAA,kBACI,qBAAqB,CACrB,UACJ,CACA,eACI,iBACJ","file":"main.ff1a146b.chunk.css","sourcesContent":[".title{\r\n    background-color:blue;\r\n    color:white;\r\n}\r\n.h2{\r\n    text-align: center;\r\n}"]}
