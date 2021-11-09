@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import styles from "../Add.module.css";
+import styles from "./Detail.module.css";
 
 const Detail = () =>{
     const { id } = useParams();
@@ -15,13 +15,13 @@ const Detail = () =>{
     }
     useEffect(()=>{
         getMovieId();
-    },[])
+    },[]);
     
     return (
         <div>
-            {loading ? <h1>Loading Movie...</h1> : 
+            {loading ? <span>Loading Movie...</span> : 
             (
-                <div className={styles.h2}>
+                <div className={styles.detail__container}>
                     <img src = {movieDetail.large_cover_image} alt={movieDetail.title}/>
                     <h2> 영화 제목: {movieDetail.title} </h2>
                     <h3> 줄거리: {movieDetail.description_full}</h3>
